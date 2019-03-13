@@ -299,7 +299,7 @@ li:first-child {
 		width: 30%;
 	}
 
-	/*.services-section-box {
+	.services-section-box {
 		width: 80%;
 		margin: 20px auto;
 		flex-direction: column;
@@ -319,7 +319,7 @@ li:first-child {
 	.services-info-img {
 		margin: 20px auto;
 	}
-} */
+} 
 
 @media(max-width: 500px) {
 	.container {
@@ -388,7 +388,12 @@ li:first-child {
 		width: 30%;
 	}
 
-	 /*.services-box-text p {
+	.mobile-services-design {
+		width: 90%;
+		margin-left: 10px;
+	}
+
+	 .services-box-text p {
 		line-height: 15px;
-	} */
+	} 
 }
