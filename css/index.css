@@ -1,3 +1,399 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+.container {
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+}
+
+header {
+	margin-bottom: 50px;
+}
+
+.nav-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 70%;
+}
+
+nav a {
+	text-decoration: none;
+	color: grey;
+	opacity: 0.5;
+}
+
+nav a:hover {
+	opacity: 1;
+}
+
+.main-heading-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.h1-container {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+}
+
+.main-header {
+	font-size: 75px;
+}
+
+button {
+	border: 1px solid black;
+	background-color: white;
+	padding: 5px 30px;
+}
+
+button a {
+	text-decoration: none;
+	color: black;
+}
+
+button:hover {
+	background-color: grey;
+	opacity: 0.6;
+}
+
+.main-heading-img {
+	margin-top: 50px;
+}
+
+.middle-img {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.features-about-container {
+	display: flex;
+	justify-content: space-around;
+	border-top: 2px solid black;
+	margin-bottom: 30px;
+}
+
+.section-inline-one {
+	margin-top: 30px;
+	width: 49%;
+}
+
+.services-product-vision-container {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid black;
+}
+
+section.section-inline-two {
+	padding-bottom: 30px;
+	width: 32%;
+}
+
+address {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding-top: 30px;
+}
+span {
+	margin-top: 20px;
+}
+footer {
+	margin: 50px 0;
+	text-align: center;
+}
+
+/* --------- Services.html ---------- */
+
+.services-main-header {
+	font-size: 25px;
+	margin-top: 30px;
+}
+
+.services-header-img {
+	width: 100%;
+	margin-top: 30px;
+}
+
+header p {
+	line-height: 18px;
+}
+
+.main-section-container {
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.services-section-box {
+	width: 380px;
+	height: 225px;
+	border: 1px solid black;
+	margin: 20px 0;
+}
+
+.services-box-text {
+	margin: 15px;
+}
+
+.services-box-text p {
+	margin-bottom: 30px;
+	line-height: 18px;
+}
+
+.services-fact-section {
+	display: flex;
+	margin-top: 30px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.services-fact-text {
+	width: 380px;
+}
+
+.services-fact-text {
+	line-height: 20px;
+}
+
+li {
+	list-style-type: square;
+	margin: 10px 0 10px 20px;
+}
+
+li:first-child {
+	margin-top: 20px;
+}
+
+.services-info-img {
+	width: 380px;
+}
 
 
+/* -------- Media queries --------- */
+@media(max-width: 800px) {
+	.container {
+		width: 90%;
+	}
+
+	.nav-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	nav {
+		width: 100%;
+		order: 2;
+	}
+
+	.logo-container {
+		display: flex;
+		justify-content: center;
+		margin: 10px 0 30px 0;
+	}
+
+	.logo {
+		order: 1;
+	}
+
+	.main-heading-container {
+		display: flex;
+		flex-direction: column;
+		margin: 20px 0;
+	}
+
+	button {
+		font-size: 15px;
+	}
+
+	.main-heading-img {
+		display: none;
+	}
+
+	section.section-inline-two {
+		padding-bottom: 30px;
+		width: 30%;
+	}
+
+	.contact {
+		width: 30%;
+	}
+
+	.services-section-box {
+		width: 80%;
+		margin: 20px auto;
+		flex-direction: column;
+		overflow: visible;
+		height: 250px;
+	}
+
+	.services-fact-section {
+		flex-direction: column-reverse;
+		width: 80%;
+		margin: 10px auto;
+	}
+
+	.section-fact-text {
+
+	}
+	.services-info-img {
+		margin: 20px auto;
+	}
+} 
+
+@media(max-width: 500px) {
+	.container {
+		width: 100%;
+	}
+
+	nav {
+		flex-direction: column;
+	}
+
+	nav a {
+		padding: 20px;
+		border: 1px solid grey;
+		width: 100%;
+		text-align: center;
+	}
+
+	.logo-container {
+		margin: 10px 0;
+	}
+
+	.main-heading-container {
+		margin-top: 0;
+	}
+
+	.features-about-container,
+	.services-product-vision-container {
+		flex-wrap: wrap;
+	}
+
+	.features-about-container,
+	.services-product-vision-container {
+		width: 94%;
+		margin: 10px auto;
+	}
+
+	section.section-inline-one,
+	section.section-inline-two {
+		width: 100%;
+	}
+
+	.features {
+		margin-top: 40px;
+	}
+
+	.about {
+		margin-bottom: 40px;
+	}
+
+	.services-product-vision-container {
+		margin-top: 0;
+	}
+	
+	.product,
+	.vision {
+		margin: 12px 0;
+	}
+
+	.contact,
+	.middle-img-container {
+		width: 94%;
+		margin: 0 auto;
+	}
+
+	address {
+		width: 30%;
+	}
+
+	.mobile-services-design {
+		width: 90%;
+		margin-left: 10px;
+	}
+
+	 .services-box-text p {
+		line-height: 15px;
+	} 
+}
